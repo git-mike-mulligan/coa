@@ -1,4 +1,4 @@
-package account;
+package entity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,12 +14,14 @@ import java.nio.file.Paths;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 
-public class ChartOfAccounts {
-	
-	private Map<String,Account> coa = new HashMap<String,Account>();
+import entity.Entity;
+
+public class EntityRegister {
+
+	private Map<String,Entity> register = new HashMap<String,Entity>();
 	private String fileName;
 	
-	public ChartOfAccounts(String fileName) throws FileNotFoundException, IOException {
+	public EntityRegister(String fileName) throws FileNotFoundException, IOException {
 		super();
 		this.fileName = fileName;
 		
@@ -37,11 +39,11 @@ public class ChartOfAccounts {
 				
 				while ( ( line = reader.readNext() ) != null ) {
 				
-					Account account = new Account( line[0], line[1], line[2], line[3] );
+					Entity entity = new Entity( line[0], line[1], line[2] );
 					
 					//System.out.println(account.toString());
 					
-					coa.put(account.getAccountNumber(), account);
+					register.put(entity.getId(), entity);
 				}
 				
 			}
@@ -55,23 +57,18 @@ public class ChartOfAccounts {
 		}
 	}
 
-	/**
-	 * @return the coa
-	 */
-	public Map<String, Account> getCoa() {
-		return coa;
+	public Map<String, Entity> getRegister() {
+		return register;
 	}
 
-	/**
-	 * @return the fileName
-	 */
+	public void setRegister(Map<String, Entity> register) {
+		this.register = register;
+	}
+
 	public String getFileName() {
 		return fileName;
 	}
 
-	/**
-	 * @param fileName the fileName to set
-	 */
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
 	}
@@ -83,20 +80,16 @@ public class ChartOfAccounts {
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		
-		Set<String> keys = coa.keySet();
+		Set<String> keys = register.keySet();
 		TreeSet<String> sortedKeys = new TreeSet<>(keys);
 		
-		builder.append("Chart Of Accounts\n");
+		builder.append("Entity Register\n");
 		builder.append("Source file: " + this.getFileName() +"\n" );
 		
 		for (String key : sortedKeys )
-			builder.append( coa.get( key ).toString() + "\n" );
+			builder.append( register.get( key ).toString() + "\n" );
 		
 		return builder.toString();
 	}
-
-	
-	
-	
 	
 }

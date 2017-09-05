@@ -4,21 +4,28 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import account.ChartOfAccounts;
+import entity.EntityRegister;
 
 public class App {
 
 	public static void main(String[] args) {
 				
 		String coaFileName = "data/coa.csv";
+		String entiyFilename = "data/entity.csv";
 		
 		ChartOfAccounts coa = null;
+		EntityRegister entityRegister = null;
 		
 		try {
 			coa = new ChartOfAccounts(coaFileName);
 			
-			//System.out.printf( "%s", coa.toString() );
+			entityRegister = new EntityRegister(entiyFilename);
 			
-			StringBuilder builder = new StringBuilder();
+			System.out.printf( "%n%s%n", coa.toString() );
+			System.out.printf( "%n%s%n", entityRegister.toString() );
+			
+			/*
+			 * StringBuilder builder = new StringBuilder();
 			
 			Set<String> keys = coa.getCoa().keySet();
 			TreeSet<String> sortedKeys = new TreeSet<>(keys);
@@ -30,6 +37,7 @@ public class App {
 			}
 			
 			System.out.printf( "%s", builder.toString() );
+			*/
 				
 		} 
 		catch (FileNotFoundException e) {
