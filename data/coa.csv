@@ -1,0 +1,72 @@
+AccountNumder,AccountDescription,AccountType,BalanceType
+1000,Checking,Asset,Debit
+1010,Savings,Asset,Debit
+1030,Short-Term Investments,Asset,Debit
+1200,Accounts Receivable,Asset,Debit
+1201,Allowance for Doubtful Accounts,Asset,Debit
+1250,Employee Loans,Asset,Debit
+1300,Prepaid Expenses,Asset,Debit
+1400,Inventory,Asset,Debit
+1410,Work-In-Process,Asset,Debit
+1500,Capitalized Equipment,Asset,Debit
+1510,Buildings and Real Estate,Asset,Debit
+1590,Amortized Assets,Asset,Debit
+1599,Accumulated Depreciation & Amortization,Asset,Debit
+1900,Other Assets,Asset,Debit
+2000,Accounts Payable,Liability,Credit
+2010,Trade Accounts Payable,Liability,Credit
+2090,Credit Cards Payable,Liability,Credit
+2120,Payroll Taxes Withheld,Liability,Credit
+2160,Health Ins Withhold Liability,Liability,Credit
+2200,Sales Tax Payable,Liability,Credit
+2400,Income Taxes Payable,Liability,Credit
+2490,Short-Term Portion of Notes Payable,Liability,Credit
+2500,Notes Payable,Liability,Credit
+2600,Notes Payable,Liability,Credit
+2899,Less:Short-Term Portion of N/P,Liability,Credit
+2900,Deferred Income Taxes,Liability,Credit
+3000,Common Stock,Equity,Credit
+3100,Addition Paid in Capital,Equity,Credit
+3500,Retained Earnings,Equity,Credit
+4000,Income - Sales,Income,Credit
+4010,Income - Rental,Income,Credit
+4020,Income - Intercompany,Income,Credit
+4030,Income - Other,Income,Credit
+4100,Reimbursible Expenses,Income,Credit
+4900,Reimbursible Expenses,Income,Credit
+4901,Reimb. Exp. - Meals and Entertainment,Income,Credit
+5000,Materials,Expense,Debit
+5100,Direct Labor,Expense,Debit
+6000,Accounting,Expense,Debit
+6020,Advertising and Marketing,Expense,Debit
+6040,Bank Service Charges,Expense,Debit
+6060,Books & Reference Items,Expense,Debit
+6080,Charitable Contributions,Expense,Debit
+6100,Continuing Education,Expense,Debit
+6120,Hardware / Software Purchases,Expense,Debit
+6121,Capitalized Purchases,Expense,Debit
+6140,Insurance - Liability,Expense,Debit
+6160,Insurance - Health,Expense,Debit
+6180,"Licenses, Dues & Subscriptions",Expense,Debit
+6190,Legal Fees,Expense,Debit
+6200,Office Expenses,Expense,Debit
+6300,Payroll Processing Fees,Expense,Debit
+6310,Payroll Taxes,Expense,Debit
+6400,Postage and Delivery,Expense,Debit
+6450,Professional Fees,Expense,Debit
+6500,Rent,Expense,Debit
+6550,Repairs and Maintenance,Expense,Debit
+6600,Salaries and Wages,Expense,Debit
+6650,Staff Meetings & Kitchen Supplies,Expense,Debit
+6670,Supplies,Expense,Debit
+6680,Supplies - Printing & Repro.,Expense,Debit
+6900,Telephone,Expense,Debit
+6950,Travel,Expense,Debit
+6951,Travel - Meals & Entertainment,Expense,Debit
+6990,Utilities,Expense,Debit
+7010,Interest Income,Other Income,Credit
+7030,Other Income,Other Income,Credit
+8100,Depreciation Expense,Other Expense,Debit
+8200,Interest Expense,Other Expense,Debit
+9000,Income Taxes - Federal,Tax,Debit
+9010,Income Taxes - State & Local,Tax,Debit
